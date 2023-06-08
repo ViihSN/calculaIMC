@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+</head>
+<style>
+    body{
+        background-color: rgb(91, 19, 19);
+        text-align: center;
+    }
+    header{
+        font-size: 22pt;
+        text-align: center;
+        color: aliceblue;
+    }
+    form{
+        background: rgb(255, 255, 255);
+        color: brown;
+        font-size: 15pt;
+        margin: auto 500px;
+        padding: 15px 5px;
+        border-radius: 15px;
+        box-shadow: 5px 10px 15px  rgba(255, 255, 255, 0.318);
+    }
+    input{
+        background-color: rgba(91, 9, 9, 0.198);
+        border-radius: 8px;
+    }
+    footer{
+        color: aliceblue;
+        font-size: 22pt;
+    }
+    #resultado{
+        background: white;
+    }
+</style>
+<body>
+    <header>
+        <h1>Calculadora IMC 🖩 </h1>
+    </header>
+
+    <section>
+        <form onsubmit="return calcular(event)"> 
+            <!-- Quando clicar no botão "submit", ele vai chamar o onsubmit 
+            depois chama a função usando return + o nome da função(+ o evento 
+            de formulario chamado "event")-->
+            <label> ⚖️ Digite seu peso: </label>
+            <input type="text" name="peso" id="peso" placeholder="Exemplo 65">
+            </br></br>
+            <label>📏 Digite sua altura: </label>
+            <input type="text" name="altura" id="altura" placeholder="1.60">
+            </br></br>
+            <input type="submit" value="Calcular IMC">
+            </br></br>  
+            <div id="resultado"></div>
+        </form>
+
+        
+    </section>
+
+    <footer>
+     </br></br>
+       &copy; Praticando
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
